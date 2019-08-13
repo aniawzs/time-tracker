@@ -19,7 +19,11 @@ import java.util.List;
 public class TrackerCoreConfigTest {
 
     @Autowired
-    List<TimeEntry> entries;
+    private List<TimeEntry> entries;
+
+    public TrackerCoreConfigTest(List<TimeEntry> entries) {
+        this.entries = entries;
+    }
 
     @Test
     public void testMe() {
