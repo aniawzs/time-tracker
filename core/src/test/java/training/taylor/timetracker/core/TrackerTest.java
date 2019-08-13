@@ -18,10 +18,6 @@ public class TrackerTest {
     @Autowired
     private Tracker tracker;
 
-    public TrackerTest(Tracker tracker) {
-        this.tracker = tracker;
-    }
-
     @Test
     public void testMe() {
         assertNotNull(tracker);
